@@ -41,19 +41,22 @@ export default function App() {
             onChange={(e) => setNome(e.target.value)}
           />
 
-          <div className="status"></div>
+          <div className="status">
             <p>{materia.nome}</p>
             <p>Nota: {notaAtual}/10</p>
             <span>{aprovado ? "APROVADO" : "RECUPERAÇÃO"}</span>
             <span>{aprovado ? "ACIMA DA MÉDIA" : "ABAIXO DA MÉDIA"}</span>
           </div>
-           <div className="classes">
+
+          <div className="classes">
             <button onClick={() => setMateria(MATERIAS[0])}>📐 Matemática</button>
             <button onClick={() => setMateria(MATERIAS[1])}>📚 Português</button>
             <button onClick={() => setMateria(MATERIAS[2])}>🏛️ História</button>
             <button onClick={() => setMateria(MATERIAS[3])}>🧪 Ciências</button>
           </div>
 
+        </section>
       </main>
     </>
-  );
+  )
+}
